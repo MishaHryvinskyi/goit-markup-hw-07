@@ -60,6 +60,19 @@ ul {
     padding-bottom:  94px;
 }
 
+.site-nav,
+.auth-nav,
+.list-benefits,
+.team-list,
+.buttons-filter,
+.photos-list,
+.list-work,
+.site-nav-footer,
+.list-client,
+.footer-list
+{
+    list-style: none;
+}
 
 /* ------------Шапка------------*/
 header .auth-nav {
@@ -218,19 +231,7 @@ header .auth-nav {
     transition-duration: 250ms;
     transition-timing-function: linear; 
 }
-.site-nav,
-.auth-nav,
-.list-benefits,
-.team-list,
-.buttons-filter,
-.photos-list,
-.list-work,
-.site-nav-footer,
-.list-client,
-.footer-list
-{
-    list-style: none;
-}
+
 
 
 .icon-mail {
