@@ -383,10 +383,87 @@
                     </li>
                 </ul>
             </div>
+        <div class="footer-input-area">
+            <form action="">
+            <p class="paragraph-input">Підпишіться на розсилку</p>
+            <div class="line-fo">
+                <input class="input-footer"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail">
+            <button class="footer-button" type="submit">
+                <span class="span-foot">
+                Підписатися
+            </span>
+            <svg class="icon-svg-button">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+            </button>
+            </div>
+            </form>
         </div>
+    </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
+                    <form>
+                        <div class="modal-style-area">
+                        <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+                            <div class="form-div-group">
+                            <label class="label-style" for="name">Ім'я</label>
+                            <div class="div-position-icon">
+                            <input class="input-style"
+                            type="text"
+                            name="name"
+                            id="name"
+                            required>
+                            <svg class="input-svg">
+                                <use href="./images/icons.svg#icon--"></use>
+                            </svg>
+                            </div>
+                            </div>
+                            <div class="form-div-group">
+                           <label class="label-style" for="tel">Телефон</label>
+                           <div class="div-position-icon">
+                           <input class="input-style"
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                            required>
+                            <svg class="input-svg">
+                                <use href="./images/icons.svg#icon-phone-black"></use>
+                            </svg>
+                            </div> 
+                            </div>
+                           <div class="form-div-group">
+                           <label class="label-style" for="email">Пошта</label>
+                           <div class="div-position-icon">
+                           <input class="input-style"
+                            type="email"
+                            name="email"
+                            id="email"
+                            required>
+                            <svg class="input-svg">
+                                <use href="./images/icons.svg#icon-email-black"></use>
+                            </svg>
+                            </div> 
+                           </div>
+                           <div class="style-area">
+                           <label class="label-style" for="comment">Коментар</label> 
+                           <div><textarea name="comment" class="text-area" id="comment" placeholder="Введіть текст"></textarea></div>
+                            </div>
+                           <div class="checkbox-style">
+                           <input class="input-checkbox visually-hidden"
+                            type="checkbox"
+                            name="politic"
+                            id="politic">
+                           <label class="label-s " for="politic">Погоджуюся з розсилкою та приймаю <a class="linc-conditions" href="">Умови договору</a></label> 
+                           </div>
+                           <button class="submit-button-style" type="submit">Відправити</button>
+                        </div>
+                    </form>
                     <button type="button" class="close" data-modal-close>
                         <svg class="icons-svg-char" >
                             <use href="./images/icons.svg#icon-char"></use>
@@ -394,6 +471,7 @@
                         </button>
                 </div>
             </div> 
+            
             <script src="./js/modal.js"></script> 
 </body>
 </html>
