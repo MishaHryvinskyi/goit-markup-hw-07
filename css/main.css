@@ -1,80 +1,11 @@
 @charset "UTF-8";
-:root {
-  --primary-text-color: #212121;
-  --acent-color: #2196F3;
-  --secondary-texy-color:#757575;
-  --primary-fon-color: #ffffff;
-  --secondary-fon-col: #F5F4FA;
-  --darc-fon-color:#2F303A;
-  --adres-color:rgba(255, 255, 255, 0.6);
-  --work-fon-color:#F5F5F5;
-  --header-border-color:#ECECEC;
-  --color-cards-border: #EEEEEE;
-  --background-color-hero: #C4C4C4;
-  --border-clients-color: #AFB1B8;
-  --bacjground-color-footer-lincs: rgba(255, 255, 255, 0.1);
-  --primery-icon-color:#AFB1B8;
-  --background-color-img: rgba(47, 48, 58, 0.8);
-  --background-color-img-overley:rgba(33, 150, 243, 0.9);
-  --background-color-modal-window: rgba(0, 0, 0, 0.2);
-  --primary-cubic-bezir: cubic-bezier(0.4, 0, 0.2, 1);
-  --primary-padding-bottom: 10px;
-}
-
-/* Палітра кольорів сайту */
-/* Колір header : #FFFFFF; */
-/* Колір секції наші переваги, і footer :  #2F303A */
-/* Колір секцій наші переваги, чим ми займаємося :  #F5F5F5; */
-/* Колір секції Наша команда : #F5F4FA */
-/* Акцент: #2196F3; */
-/* колір тексту: #2196F3; */
-/* колір другорядного тексту: #757575; */
-/* ------------index.html------------*/
-body {
-  font-family: "Roboto", "sans-serif";
-  color: var(--primary-text-color);
-  background-color: var(--primary-fon-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.site-nav,
-.auth-nav,
-.list-benefits,
-.team-list,
-.buttons-filter,
-.photos-list,
-.list-work,
-.site-nav-footer,
-.list-client,
-.footer-list {
-  list-style: none;
-}
-
+@import '/sass/utils/_vars.scss';
+@import '/sass/components/';
+@import '/sass/base/common.scss';
+@import '/sass/base/_reset.scss';
 /* ------------Шапка------------*/
-
 @import '/sass/_header.scss';
 
-
-
-
-/* ------------Декоративні елементи------------*/
 /* ------------Герой------------*/
 .section-hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -107,111 +38,8 @@ ul {
 
 /* ------------Кнопи------------*/
 /* ------------Кнопки портфоліо------------*/
-.buttons-filter .button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  color: var(--primary-text-color);
-  background-color: var(--secondary-fon-col);
-  border: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button {
-  background-color: var(--secondary-fon-col);
-}
-
-.button-filter:hover,
-.button-filter:focus,
-.button-filter:active {
-  background-color: var(--acent-color);
-  color: var(--primary-fon-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.button-filter {
-  font-family: "Roboto", "sans-serif";
-  border: 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  border-radius: 4px;
-  cursor: pointer;
-  max-height: 38px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
-}
-
-.button-all {
-  width: 73px;
-  padding-left: 25px;
-  padding-right: 25px;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-web {
-  width: 125px;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-adds {
-  width: 112px;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-dysain {
-  width: 103px;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-market {
-  width: 130px;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* ------------Кнопка секції герой------------*/
-.button-style {
-  background-color: var(--acent-color);
-  color: var(--primary-fon-color);
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: inline-block;
-  background: var(--acent-color);
-  border-radius: 4px;
-  max-width: 216px;
-  max-height: 50px;
-  padding: 10px 32px;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-style:hover,
-.button-style:focus,
-.button-style:active {
-  background-color: var(--secondary-fon-col);
-  color: var(--primary-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
+@import '/sass/components/_buttons.scss';
 /* ------------Наші переваги------------*/
 .list-benefits {
   display: flex;
@@ -751,12 +579,7 @@ input[placeholder] {
 }
 
 /* --------Універсальні--------- */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
+
 
 .port {
   border: 1px solid var(--header-border-color);
