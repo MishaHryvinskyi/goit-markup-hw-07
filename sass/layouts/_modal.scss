@@ -20,20 +20,15 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0) ;
-  }
-  
   .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     overflow: visible;
+    &.is-hidden .modal {
+      transform: translate(-50%, -50%) scale(0) ;
+    }
   }
-  
-  
-  
   
   .icons-svg-char {
     width: 18px;
@@ -57,26 +52,24 @@
     height: 40px;
     left: 576px;
     top: 382px; 
-  
     padding-left: 42px;
+
+    &:focus-visible {
+      border-color: var(--acent-color);
+    }
+    &:focus-within {
+      border-color: var(--acent-color);
+    } 
+    &:focus-within +svg{
+      fill:var(--acent-color);
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      fill: var(--acent-color);
+    } 
   } 
   
-  .input-style:focus-visible {
-    border-color: var(--acent-color);
-  }
-  .input-style:focus-within {
-    border-color: var(--acent-color);
   
-  } 
-  
-  .input-style:focus-within +svg{
-    fill:var(--acent-color);
-  
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--acent-color);
-  } 
   
   
   .text-area:focus-within {

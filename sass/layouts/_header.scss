@@ -30,35 +30,31 @@ header .auth-nav {
 .main-nav {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .site-nav {
     color: var(--primary-text-color);
-    display: flex;      
+    display: flex;     
+    & .item-nav:not(:last-child) {
+        margin-right: 50px;
+    } 
+    & .header-link,
+    & {
+    color: var(--primary-text-color);   
+}
+    & .header-link:hover,
+    & .header-link:focus {
+    color: var(--acent-color);
+}
 }
 
 .nav {
     margin-right: auto;
 }
 
-.site-nav .item-nav:not(:last-child) {
-    margin-right: 50px;
-}
 
-.site-nav .header-link,
-.site-nav {
-    color: var(--primary-text-color);   
-   
-}
 
-.site-nav .header-link:hover,
-.site-nav .header-link:focus {
-    color: var(--acent-color);
-}
-
-.header-link:active {
-    color: var(--acent-color);
-}
 .header-link {
     display: block;
     padding-top: 32px;
@@ -70,7 +66,11 @@ header .auth-nav {
 
     transition-property: background-color ;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:active {
+        color: var(--acent-color);
+    }
 }
 
 .auth-nav .item-nav + .item-nav {
@@ -80,7 +80,14 @@ header .auth-nav {
 
 .navs-item {
     position: relative;
-    
+    &.after:hover::after {
+        transform: scaleX(1);
+      }
+    &:hover::after,
+    &:focus::after
+    {
+        display: inline-block;
+    }  
 }
 
 .current::after {
@@ -111,30 +118,14 @@ header .auth-nav {
     display: block;
 }
  
-.navs-item.after:hover::after {
-    transform: scaleX(1);
-  }
 
-.navs-item:hover::after,
-.navs-item:focus::after
-{
-    display: inline-block;
-}
       
 /* ------------Контатки------------*/
-
-.main-nav {
-    justify-content: center;
-}
 
 .auth-nav .header-link,
 .auth-nav  {
     color: var(--secondary-texy-color);
 }
-
-
-
- 
 
 .auth-nav .header-link:hover,
 .auth-nav .header-link:focus 
@@ -147,40 +138,23 @@ header .auth-nav {
     color: var(--acent-color);
 }
 
-.header-link {
-    text-decoration: none;
-
-    transition-property: color ;
-    transition-duration: 250ms;
-    transition-timing-function: linear; 
-}
-
-
-
 .icon-mail {
     margin-right: 10px;
-
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-
-
-
 .header-link {
+    text-decoration: none;
+    transition-property: color ;
+    transition-duration: 250ms;
+    transition-timing-function: linear; 
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-.header-link:focus,
-.header-link:hover
+    fill: var(--secondary-texy-color); 
+    &:focus,
+    &:hover
  {
     fill: var(--acent-color);
 }
-
-.header-link {
-     fill: var(--secondary-texy-color); 
 }

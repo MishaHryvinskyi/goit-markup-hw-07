@@ -210,7 +210,8 @@
   }
   
   
-  .footer-button:hover .icon-svg-button {
+  .footer-button:hover .icon-svg-button,
+  .footer-button:focus .icon-svg-button {
     fill: var(--primary-text-color);
   
     transition-property: fill;

@@ -7,22 +7,19 @@
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
     
   }
   
-  .section-work-title {
-    margin-bottom: 50px;
-    text-align: center;
-  }
   .list-work { 
     display:flex;    
-    
-  }
-  .list-work .item-do {
-    margin-right: 30px;
-  }
-  .list-work .item-do:last-child {
-    margin-right: 0;
+    & .item-do {
+      margin-right: 30px;
+    }
+    & .item-do:last-child {
+      margin-right: 0;
+    }
   }
   
   .img-item,

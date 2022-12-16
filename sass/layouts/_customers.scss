@@ -12,13 +12,11 @@
     background-color: var(--primary-fon-color);
   }
   
-  
   .list-client {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
   
   .icon-clients {
     width: 106px;
@@ -31,9 +29,9 @@
   .company {
     width: 170px;
     height: 92px;
-    
-    
-    
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   
   .client-item {
@@ -43,43 +41,24 @@
     padding:  16px 32px;
     border: 1px solid var(--border-clients-color);
     border-radius: 4px;
-    
     align-items: center;
-  
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-    
+    &:hover {
+      border: 1px solid var(--acent-color);
     }
-  
-  
-  .company:not(:last-child) {
-    margin-right: 30px;
-  }
-  
-  
-  
-  .client-item:hover {
-    border: 1px solid var(--acent-color);
-  }
-  
-  .client-item:focus {
-    border: 1px solid var(--acent-color);
-  }
-  
-  
-  
-  .client-item:hover .icon-clients {
-    fill: var(--acent-color);
-  }
-  
-  
-  .client-item:focus .icon-clients {
-    fill: var(--acent-color);
-  }
-  
-  .client-item:hover  {
-    border-radius: 4px;
-    fill: var(--acent-color);
-  }
-  
+    &:focus {
+      border: 1px solid var(--acent-color);
+    }
+    &:hover .icon-clients {
+      fill: var(--acent-color);
+    }
+    &:focus .icon-clients {
+      fill: var(--acent-color);
+    }
+    &:hover  {
+      border-radius: 4px;
+      fill: var(--acent-color);
+    }
+    }
