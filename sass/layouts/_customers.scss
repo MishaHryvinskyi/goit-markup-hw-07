@@ -1,0 +1,85 @@
+.client-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .clients-div {
+    background-color: var(--primary-fon-color);
+  }
+  
+  
+  .list-client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .icon-clients {
+    width: 106px;
+    height: 60px;  
+    fill: var(--primery-icon-color);
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .company {
+    width: 170px;
+    height: 92px;
+    
+    
+    
+  }
+  
+  .client-item {
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    padding:  16px 32px;
+    border: 1px solid var(--border-clients-color);
+    border-radius: 4px;
+    
+    align-items: center;
+  
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    
+    }
+  
+  
+  .company:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  
+  
+  .client-item:hover {
+    border: 1px solid var(--acent-color);
+  }
+  
+  .client-item:focus {
+    border: 1px solid var(--acent-color);
+  }
+  
+  
+  
+  .client-item:hover .icon-clients {
+    fill: var(--acent-color);
+  }
+  
+  
+  .client-item:focus .icon-clients {
+    fill: var(--acent-color);
+  }
+  
+  .client-item:hover  {
+    border-radius: 4px;
+    fill: var(--acent-color);
+  }
+  
