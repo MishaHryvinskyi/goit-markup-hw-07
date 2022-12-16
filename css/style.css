@@ -49,6 +49,19 @@ h1, h2, h3, h4, h5, h6, p {
     
 }
 
+.site-nav,
+.auth-nav,
+.list-benefits,
+.team-list,
+.buttons-filter,
+.photos-list,
+.list-work,
+.site-nav-footer,
+.list-client,
+.footer-list
+{
+    list-style: none;
+}
 ul {
     padding: 0;
     margin: 0;
@@ -218,19 +231,7 @@ header .auth-nav {
     transition-duration: 250ms;
     transition-timing-function: linear; 
 }
-.site-nav,
-.auth-nav,
-.list-benefits,
-.team-list,
-.buttons-filter,
-.photos-list,
-.list-work,
-.site-nav-footer,
-.list-client,
-.footer-list
-{
-    list-style: none;
-}
+
 
 
 .icon-mail {
@@ -261,7 +262,6 @@ header .auth-nav {
      fill: var(--secondary-texy-color); 
 }
 
-/* ------------Декоративні елементи------------*/
 
 
 
