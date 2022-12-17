@@ -1,11 +1,11 @@
-.list-benefits {
+.benefits {
     display: flex; 
-    & .list-item:not(:last-child) {
+    & .benefits__item:not(:last-child) {
     margin-right: 30px;
    }   
   }
 
-  .list-item {
+  .benefits__item {
     width: 270px;
   }
   
@@ -22,13 +22,13 @@
     overflow: hidden;
   }
   
-  .list-title {
+  .benefits__title {
     @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
     text-transform: uppercase;
     color: var(--primary-text-color);
     margin-bottom:var(--primary-padding-bottom) ;
   }
-  .paragraph {
+  .benefits__paragraph {
     color: var(--secondary-texy-color);
   }
   

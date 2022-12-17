@@ -9,7 +9,7 @@
     color: var(--acent-color)
 }
 
-.logo-footer {
+.logo__footer {
     font-family: 'Raleway', 'sans-serif';
     @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
     color: var(--primary-fon-color);

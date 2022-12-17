@@ -2,53 +2,48 @@
     background-color: var(--secondary-fon-col);        
   }
   
-  .section-title {
-    @include font($fs:36, $fw:700, $lh:42, $ls:0.03em);
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .paragraph-team {
-    @include font($fs:16, $fw:400, $lh:19, $ls:0.03em);
-    text-align: center;
-    color: var(--secondary-texy-color); 
-    margin-bottom: 16px;
-  }
-  .team-title {
-    @include font($fs:16, $fw:500, $lh:19, $ls:0.03em);
-    text-align: center;
-    margin-bottom:var(--primary-padding-bottom);    
-  }
-
   .team {
     display: flex;
     justify-content: center;
-    & .team-list:not(:last-child) {
+    & .team__list:not(:last-child) {
     margin-right: 30px;
     }
   }
-  
-  .team-picks {
-    margin-bottom: 30px;
-  }
-  .team-list {
+
+  .team__list {
     box-shadow: 
     0px 1px 3px
     rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--primary-fon-color);
-  
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-fon-color);
+  }
+
+  .team__picks {
+    margin-bottom: 30px;
+  }
+
+  .team__title {
+    @include font($fs:16, $fw:500, $lh:19, $ls:0.03em);
+    text-align: center;
+    margin-bottom:var(--primary-padding-bottom);    
+  }
+
+  .team__paragraph {
+    @include font($fs:16, $fw:400, $lh:19, $ls:0.03em);
+    text-align: center;
+    color: var(--secondary-texy-color); 
+    margin-bottom: 16px;
   }
   
-  .team-list-socialm {
+  .position {
     @extend %flex-align;
     justify-content: center;
     padding-bottom: 30px;
   }
   
-  .team-item-socialm {
+  .team-social__item {
   width: 44px;
   height: 44px;
   &:not(:last-child) {
@@ -56,7 +51,7 @@
     }
   }
   
-  .team-soc-link  {
+  .team-social__link  {
     width: 100%;
     height: 100%;  
     @extend %flex-align;
@@ -67,15 +62,15 @@
     &:hover {
     background-color: var(--acent-color);
   } 
-    &:hover .team-soc-icon {
+    &:hover .team-social__icon {
     fill: var(--primary-fon-color);
   }
-    &:focus .team-soc-icon {
+    &:focus .team-social__icon {
     fill: var(--primary-fon-color);
   }
   }
   
-  .team-soc-icon {
+  .team-social__icon {
     fill: var(--primery-icon-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }

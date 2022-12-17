@@ -1,37 +1,18 @@
-.client-title {
-    @include font($fs:36, $fw:700, $lh:42, $ls:0.03em);
-    text-align: center;
-    @extend %flex-align;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  
-  .clients-div {
-    background-color: var(--primary-fon-color);
-  }
-  
-  .list-client {
-    @extend %flex-align;
-    justify-content: center;
 
+  .client {
+    @extend %flex-align;
+    justify-content: center;
   }
-  
-  .icon-clients {
-    width: 106px;
-    height: 60px;  
-    fill: var(--primery-icon-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .company {
+
+  .client__item {
     width: 170px;
     height: 92px;
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
-  
-  .client-item {
+
+  .client__link {
     width: 100%;
     height: 100%;  
     @extend %flex-align;
@@ -46,10 +27,10 @@
     &:focus {
       border: 1px solid var(--acent-color);
     }
-    &:hover .icon-clients {
+    &:hover .client__icon {
       fill: var(--acent-color);
     }
-    &:focus .icon-clients {
+    &:focus .client__icon {
       fill: var(--acent-color);
     }
     &:hover  {
@@ -57,3 +38,10 @@
       fill: var(--acent-color);
     }
     }
+  
+  .client__icon {
+    width: 106px;
+    height: 60px;  
+    fill: var(--primery-icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
