@@ -8,14 +8,6 @@
     margin-bottom: 20px; 
   }
   
-  .logo-footer {
-    font-family: 'Raleway', 'sans-serif';
-    @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
-    color: var(--primary-fon-color);
-    text-decoration: none;
-    display: inline-block;   
-  }
-  
   .site-nav-footer > li:not(:last-child) {
     margin-bottom: 9px;  
   }
@@ -89,10 +81,6 @@
     justify-content: space-between;
   }
   
-  .logo-footer {
-    margin-bottom: 20px;
-  }
-  
   .div-fot {
     display: inline-block;
     & .fot-portfolio {
@@ -132,7 +120,7 @@
   }
 
   input[placeholder] {
-    @include font($fs:16, $fw:400, $lh:20, $ls:0.03em);
+    @include font($fs:16, $fw:null, $lh:20, $ls:0.03em);
     padding: 15px 16px;
     color: var(--secondary-texy-color);
   }

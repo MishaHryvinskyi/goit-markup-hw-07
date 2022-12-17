@@ -1,7 +1,8 @@
 
   body {
     font-family: 'Roboto', 'sans-serif';
+    @include font($fs:14, $fw:400, $lh:24, $ls:0.03em);
     color: var(--primary-text-color);
     background-color:var(--primary-fon-color);
-    @include font($fs:14, $fw:400, $lh:24, $ls:0.03em);
+   
   }
