@@ -1,15 +1,11 @@
-.nopadding {
+  .nopadding {
     padding-top: 0px;
   }
   
   .section-work-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+    @include font($fs:36, $fw:700, $lh:42, $ls:0.03em);
     margin-bottom: 50px;
     text-align: center;
-    
   }
   
   .list-work { 
@@ -31,33 +27,22 @@
   
   .paragraph-item {
    display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  
-  color: var(--primary-fon-color)
+   @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
+   text-transform: uppercase;
+   color: var(--primary-fon-color)
   }
-  
-  
   
   .item-do {
     position: relative;
-   
   }
   
-  
   .item-p {
-    display: flex;
+    @extend %flex-align;
     width: 100%;
     height: 70px;
-    align-items: center;
     justify-content: center;
-    
     position: absolute;
     bottom: 0;
-    
   }
   
   .item-div-img::after {

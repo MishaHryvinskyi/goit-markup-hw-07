@@ -1,13 +1,12 @@
 .list-benefits {
-    display: flex;    
+    display: flex; 
+    & .list-item:not(:last-child) {
+    margin-right: 30px;
+   }   
   }
+
   .list-item {
     width: 270px;
-  }
-  
-  .list-benefits .list-item:not(:last-child) {
-     margin-right: 30px;
-  
   }
   
   .visually-hidden { 
@@ -31,23 +30,15 @@
     margin-bottom:var(--primary-padding-bottom) ;
   }
   .paragraph {
-    
     color: var(--secondary-texy-color);
-  
   }
   
-  
   .privileges-item {
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
-    background: #F5F4FA;
+    background: var(--secondary-fon-col);
     border-radius: 4px;
-    
-  }
-  
-  
-  
+  }  

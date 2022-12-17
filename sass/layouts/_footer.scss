@@ -79,9 +79,9 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
-    align-items: center;
+    
     fill: var(--primary-fon-color);
     transition-property: background-color ;
     transition-duration: 250ms;

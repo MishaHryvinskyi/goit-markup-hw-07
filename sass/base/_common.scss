@@ -1,11 +1,7 @@
 
-
   body {
     font-family: 'Roboto', 'sans-serif';
     color: var(--primary-text-color);
     background-color:var(--primary-fon-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include font($fs:14, $fw:400, $lh:24, $ls:0.03em);
   }

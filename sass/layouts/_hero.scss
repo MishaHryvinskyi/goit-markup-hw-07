@@ -22,10 +22,7 @@
   .hero-title {
     color: var(--primary-fon-color);
     max-width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    @include font($fs:44, $fw:900, $lh:60, $ls:0.06em);
     text-transform: uppercase;
     margin-bottom: 30px;
     margin-left: auto;

@@ -3,26 +3,23 @@
   }
   
   .section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include font($fs:36, $fw:700, $lh:42, $ls:0.03em);
     text-align: center;
     margin-bottom: 50px;
   }
   
   .paragraph-team {
-    font-size: 16px;
+    @include font($fs:16, $fw:400, $lh:19, $ls:0.03em);
     text-align: center;
     color: var(--secondary-texy-color); 
     margin-bottom: 16px;
   }
   .team-title {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.18;
+    @include font($fs:16, $fw:500, $lh:19, $ls:0.03em);
     text-align: center;
-    margin-bottom:var(--primary-padding-bottom) ;    
+    margin-bottom:var(--primary-padding-bottom);    
   }
+
   .team {
     display: flex;
     justify-content: center;
@@ -46,9 +43,8 @@
   }
   
   .team-list-socialm {
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
-    align-items: center;
     padding-bottom: 30px;
   }
   
@@ -63,10 +59,9 @@
   .team-soc-link  {
     width: 100%;
     height: 100%;  
-    display: flex;
+    @extend %flex-align;
     border-radius: 50%;
     justify-content: center;
-    align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     &:focus,
     &:hover {
