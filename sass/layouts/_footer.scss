@@ -5,40 +5,29 @@
   }
   
   .footer-item > .logo-footer {
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
   }
-  
   
   .logo-footer {
     font-family: 'Raleway', 'sans-serif';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
     color: var(--primary-fon-color);
     text-decoration: none;
-    display: inline-block;
-    
+    display: inline-block;   
   }
   
   .site-nav-footer > li:not(:last-child) {
-    margin-bottom: 9px;
-    
+    margin-bottom: 9px;  
   }
-  
   
   .address {
     font-style: normal;
-    width: 231px;
-  
-     
+    width: 231px;  
     
   }
   .address-item {
     color: var(--primary-fon-color);
     text-decoration: none;
-  
-    
   }
   
   .address-items {
@@ -53,13 +42,9 @@
   }
   }
   
-  
   .footer-paragraph {
     color:var(--secondary-fon-col);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font($fs:14, $fw:700, $lh:24, $ls:0.03em);
     text-transform: uppercase;
     margin-bottom: 20px;
   }
@@ -122,18 +107,13 @@
   
   .footer-input-area {
     margin-left: 93px;
-  
   }
   
   .paragraph-input {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
     text-transform: uppercase;
     color: var(--primary-fon-color);
     margin-bottom: 20px;
-  
   }
   .input-footer {
     width: 358px;
@@ -150,11 +130,9 @@
   .footer-list {
     display: flex;
   }
+
   input[placeholder] {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font($fs:16, $fw:400, $lh:20, $ls:0.03em);
     padding: 15px 16px;
     color: var(--secondary-texy-color);
   }
@@ -171,9 +149,6 @@
   }
   
   .span-foot {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
+    @include font($fs:16, $fw:700, $lh:30, $ls:0.06em);
     text-align: center;
-    letter-spacing: 0.06em;
   }

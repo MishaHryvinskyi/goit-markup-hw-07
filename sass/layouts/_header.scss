@@ -18,15 +18,11 @@
 .head-top  {
     background-color: var(--primary-fon-color);
     border-bottom: 1px solid var(--header-border-color);
-    
 }
-
 
 .logo {
     font-family: 'Raleway', 'sans-serif';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
     text-decoration: none;
     color: var(--primary-text-color); 
     margin-right: 93px;   
@@ -34,12 +30,7 @@
 .logo-web {
     color: var(--acent-color)
 }
-
-
-
 /* ------------Навігація по сайті------------*/
-
-
 .main-nav {
     @extend %flex-align;
     justify-content: center;
@@ -68,21 +59,14 @@
     margin-right: auto;
 }
 
-
-
 .header-link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
+    @include font($fs:14, $fw:500, $lh:16, $ls:0.02em);
     transition-property: background-color ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
     &:active {
         color: var(--acent-color);
     }

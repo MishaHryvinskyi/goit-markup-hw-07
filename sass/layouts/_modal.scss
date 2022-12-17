@@ -5,10 +5,8 @@
     height: 100%;
     background-color: var(--background-color-modal-window);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
   }
   .modal {
-  
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,11 +35,8 @@
   }
   
   .form-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font($fs:20, $fw:700, $lh:23, $ls:0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--primary-text-color);
   }
@@ -70,9 +65,7 @@
     } 
   } 
   
-  
-  
-  
+
   .text-area:focus-within {
     border: 1px solid var(--acent-color);
   
@@ -80,9 +73,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  
-  
   
   .form-div-group {
     margin-bottom: 10px;
@@ -104,11 +94,8 @@
     display: flex;
     align-items: left;
     color: var(--secondary-texy-color);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
+    @include font($fs:12, $fw:400, $lh:14, $ls:0.01em);
     margin-bottom: 4px;
-    letter-spacing: 0.01em;
   } 
   
   .style-area {
@@ -128,11 +115,7 @@
   
   
   textarea [placeholder] {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-  
+    @include font($fs:12, $fw:400, $lh:14, $ls:0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
   
