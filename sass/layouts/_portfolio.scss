@@ -49,6 +49,10 @@
   overflow: hidden;
 }
 
+.portfolio__image {
+  display: block;
+}
+
 .portfolio-overlay__paragraph {
   position: absolute;
   top: 0;
@@ -71,26 +75,17 @@
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  &> .cards__title {  
-    margin-bottom: 4px;
-  }
 }
 
 .cards__title {
     @include font($fs:18, $fw:700, $lh:36, $ls:0.06em);
     color: var(--primary-text-color);
+    margin-bottom: 4px;
   }
 
   .cards__paragraph {
     @include font($fs:16, $fw:null, $lh:30, $ls:0.03em);
     color: var(--secondary-texy-color);  
-  }
-  
-  .port {
-    border: 1px solid var(--header-border-color);
-    border-top: none;
-    border-left: none;
-    border-right: none;
   }
   
   .portfolio-list {
