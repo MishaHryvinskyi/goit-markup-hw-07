@@ -86,17 +86,22 @@
     margin-right: 70px;
   }
   
-  .footer-input-area {
+  .footer-input {
     margin-left: 93px;
   }
   
-  .paragraph-input {
+  .footer-input__paragraph {
     @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
     text-transform: uppercase;
     color: var(--primary-fon-color);
     margin-bottom: 20px;
   }
-  .input-footer {
+
+  .combination {
+    display: flex;
+  }
+
+  .input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -118,18 +123,14 @@
     color: var(--secondary-texy-color);
   }
   
-  .icon-svg-button {
+  .footer-input__icon-svg {
     width: 24px;
     height: 24px;
     margin-left: 10px;
     fill: var(--primary-fon-color);
   }
   
-  .line-fo {
-    display: flex;
-  }
-  
-  .span-foot {
+  .footer-input__span {
     @include font($fs:16, $fw:700, $lh:30, $ls:0.06em);
     text-align: center;
   }
